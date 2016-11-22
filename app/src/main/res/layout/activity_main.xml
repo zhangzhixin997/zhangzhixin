@@ -6,8 +6,41 @@
 
     tools:context="com.baidumap.zhangzhixin.mywork.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:text="wofu"
+       android:textSize="30dp"
+       android:textAlignment="center"
+       android:id="@+id/username"
+       />
+     <ListView
+         android:layout_below="@+id/username"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/lv">
+
+     </ListView>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:hint="请输入内容"
+            android:id="@+id/text"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exit"
+            android:text="退出"
+            android:layout_toLeftOf="@+id/send"/>
+        <Button
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/send"
+            android:text="发送"/>
+    </RelativeLayout>
 </RelativeLayout>
